@@ -1,6 +1,7 @@
 # Assignment 9: Observability with OpenTelemetry
 
 **Name:** 陳致安 · **Student ID:** B11309058 · **Course:** DevOps · **Date:** November 3, 2026
+**Code:** https://github.com/wagyboy/devops-otel-lab
 **Stack:** Python 3.10 / 3.12 · OpenTelemetry SDK 1.45.2 (instrumentation 0.66b2) · Docker Desktop 29.9.2 · OTel Collector Contrib 0.164.0 · Jaeger 2.22.0 · Prometheus 3.15.1
 
 | Level | What I built | Section |
@@ -20,7 +21,7 @@ DevOps ships small changes often, so the team needs to find out quickly whether 
 
 OpenTelemetry (OTel) is the vendor-neutral CNCF standard for producing these three signals. The application is instrumented once with the OTel API and SDK and sends data with OTLP. Where the data ends up (Jaeger, Prometheus, a file, a SaaS vendor) is decided in the **Collector** configuration, not in application code. This assignment builds that path step by step.
 
-The key code and configuration are excerpted in each section (project folders `task1/`, `task2/`, `o-level/`). Every screenshot is real output from the runs on November 3, 2026.
+The key code and configuration are excerpted in each section; the full source (folders `task1/`, `task2/`, `o-level/`) is at https://github.com/wagyboy/devops-otel-lab. Every screenshot is real output from the runs on November 3, 2026.
 
 ## 2. Task 1 (A): OpenTelemetry SDK with console output
 
