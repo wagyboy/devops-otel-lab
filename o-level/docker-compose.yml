@@ -1,0 +1,47 @@
+name: a9-observability
+
+x-otel-env: &otel-env
+  OTEL_EXPORTER_OTLP_ENDPOINT: http://otel-collector:4317
+  OTEL_EXPORTER_OTLP_INSECURE: "true"
+  OTEL_SEMCONV_STABILITY_OPT_IN: http   # stable HTTP attribute names (http.response.status_code)
+
+services:
+  frontend:
+    build: ./services
+    command: ["python", "frontend.py"]
+    environment:
+      <<: *otel-env
+      OTEL_SERVICE_NAME: shop-frontend
+      INVENTORY_URL: http://inventory:8081
+    ports: ["8080:8080"]
+    depends_on: [inventory, otel-collector]
+
+  inventory:
+    build: ./services
+    command: ["python", "inventory.py"]
+    environment:
+      <<: *otel-env
+      OTEL_SERVICE_NAME: inventory-service
+    depends_on: [otel-collector]
+
+  otel-collector:
+    image: otel/opentelemetry-collector-contrib:0.164.0
+    command: ["--config=/etc/otelcol/config.yaml"]
+    volumes:
+      - ./otel-collector-config.yaml:/etc/otelcol/config.yaml:ro
+      - ./output:/output
+    ports:
+      - "4317:4317"   # OTLP gRPC (also reachable from the host)
+      - "18889:8889"  # Prometheus scrape endpoint (host 8889 is reserved by Windows/Hyper-V)
+    depends_on: [jaeger]
+
+  jaeger:
+    image: jaegertracing/jaeger:2.22.0
+    ports: ["16686:16686"]   # Jaeger UI
+
+  prometheus:
+    image: prom/prometheus:v3.15.1
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    ports: ["19090:9090"]   # Prometheus UI (host 9090 was reserved by Windows)
+    depends_on: [otel-collector]

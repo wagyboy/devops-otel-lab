@@ -1,0 +1,7 @@
+validate-cart      trace=f65694cb288c8ec2e123205dd9778926 span=de146a70c50cea55 parent=d15140ea04da1a03    28.4 ms  UNSET
+db.update-stock    trace=f65694cb288c8ec2e123205dd9778926 span=11386f044a9c89f7 parent=75d667f92be0e96a    15.0 ms  UNSET
+db.update-stock    trace=f65694cb288c8ec2e123205dd9778926 span=b168ba36ee11879b parent=75d667f92be0e96a    15.8 ms  UNSET
+reserve-stock      trace=f65694cb288c8ec2e123205dd9778926 span=75d667f92be0e96a parent=d15140ea04da1a03    30.8 ms  UNSET
+charge-payment     trace=f65694cb288c8ec2e123205dd9778926 span=b432847b2b632fc0 parent=d15140ea04da1a03    31.2 ms  UNSET
+send-email         trace=f65694cb288c8ec2e123205dd9778926 span=574cd4fc864541ae parent=d15140ea04da1a03     0.0 ms  ERROR
+checkout           trace=f65694cb288c8ec2e123205dd9778926 span=d15140ea04da1a03 parent=(root)              90.4 ms  UNSET

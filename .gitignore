@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+# generated at runtime (o-level logs grow to several MB); task2/output is kept as a small sample
+o-level/output/
+# report build artifacts
+build/preview/
+build/report.html
+*.pdf

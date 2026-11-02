@@ -1,0 +1,274 @@
+2ea04ed0da23ff9ea80da3a957fb33a0  shop-frontend      ERROR   payment declined sku=SKU-200 qty=1
+76bb68996bc3c3f6c8dcc2d8afa4ae50  shop-frontend      ERROR   payment declined sku=SKU-100 qty=2
+b1f68df29dac1020c1ac58835b2ba7a2  inventory-service  WARN    unknown sku SKU-999
+b1f68df29dac1020c1ac58835b2ba7a2  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+d6a433e9fc9b27d449ad867c94241fdb  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+d6a433e9fc9b27d449ad867c94241fdb  inventory-service  WARN    unknown sku SKU-999
+3eb0e628f7400742b0dba5e56b43570a  inventory-service  WARN    unknown sku SKU-999
+3eb0e628f7400742b0dba5e56b43570a  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+b73db51eacc93df541a9c64390a5c5e5  shop-frontend      ERROR   payment declined sku=SKU-200 qty=3
+acf9a9e778a6d031a91d52fd40760185  inventory-service  WARN    unknown sku SKU-999
+acf9a9e778a6d031a91d52fd40760185  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+3d5ef8e2bd68b8bf5174acddc6bfc39b  shop-frontend      ERROR   payment declined sku=SKU-200 qty=3
+83bed92de842bf75f811ddaba7b2a8e3  shop-frontend      ERROR   payment declined sku=SKU-300 qty=3
+1d36ff8980aafb2cfbb5ea250634c90d  shop-frontend      ERROR   payment declined sku=SKU-200 qty=2
+36d51649de898466dde98655c3ad3add  shop-frontend      ERROR   payment declined sku=SKU-100 qty=1
+0c7e076c7e206d5ce123a93928a5802a  shop-frontend      ERROR   payment declined sku=SKU-200 qty=1
+783ad5d52380453718bcd453755d2b63  inventory-service  WARN    unknown sku SKU-999
+783ad5d52380453718bcd453755d2b63  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+3b0f5dbfd38f6c2b1d473044da82544a  shop-frontend      ERROR   payment declined sku=SKU-200 qty=3
+6045542f407b884c9eeff7b611c53df6  shop-frontend      ERROR   payment declined sku=SKU-200 qty=2
+127a3785e70a9c879321afe6922e2eaf  inventory-service  WARN    unknown sku SKU-999
+127a3785e70a9c879321afe6922e2eaf  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+b9f7d6ca18df347c8ed07de5c2348743  shop-frontend      ERROR   payment declined sku=SKU-200 qty=2
+2e3c06ef335e4c863fb0c393eac34195  inventory-service  WARN    unknown sku SKU-999
+2e3c06ef335e4c863fb0c393eac34195  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+8fa79da40415c8ea3d222b7eff4b87f3  inventory-service  WARN    unknown sku SKU-999
+8fa79da40415c8ea3d222b7eff4b87f3  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+41d017757372993c380ed50ed22927f7  shop-frontend      ERROR   payment declined sku=SKU-300 qty=4
+cacf04bb893f3dc6716261b2c136afe9  inventory-service  WARN    unknown sku SKU-999
+cacf04bb893f3dc6716261b2c136afe9  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+7b2b3befa2b4ed55b8fbffffcecec9e5  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+7b2b3befa2b4ed55b8fbffffcecec9e5  inventory-service  WARN    unknown sku SKU-999
+ae8f0aeaaec1480d708cac55b570d626  inventory-service  WARN    unknown sku SKU-999
+225a5fce46d76af5658e72ef5f7884d4  inventory-service  WARN    unknown sku SKU-999
+ae8f0aeaaec1480d708cac55b570d626  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+225a5fce46d76af5658e72ef5f7884d4  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+ea1360f4e771fee1c8caecd43c03854b  inventory-service  WARN    unknown sku SKU-999
+ea1360f4e771fee1c8caecd43c03854b  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+362228be0e8bbcf483d6c8390a71b244  shop-frontend      ERROR   payment declined sku=SKU-300 qty=2
+b619dd6410830c0c54553f8c6e08a112  inventory-service  WARN    unknown sku SKU-999
+b2a942f6df8027d8257fdb26c6a89b70  shop-frontend      ERROR   payment declined sku=SKU-100 qty=3
+b619dd6410830c0c54553f8c6e08a112  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+cd3ab6a5f055551b4ee59e4081c9326c  shop-frontend      ERROR   payment declined sku=SKU-100 qty=3
+6878f1da9b4c71afc4b4d9f526edf05c  inventory-service  WARN    unknown sku SKU-999
+a0d35e17d7d1812db10cf18232ca5341  shop-frontend      ERROR   payment declined sku=SKU-200 qty=1
+6878f1da9b4c71afc4b4d9f526edf05c  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+8d4d09a71d3d89b88a111886a185826d  inventory-service  WARN    unknown sku SKU-999
+8d4d09a71d3d89b88a111886a185826d  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+926874337343467cf095ad70e4a6ae63  inventory-service  WARN    unknown sku SKU-999
+c9d868c1e653e202552ba60a5406b70e  inventory-service  WARN    unknown sku SKU-999
+926874337343467cf095ad70e4a6ae63  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+c9d868c1e653e202552ba60a5406b70e  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+10dc4a7e383621e90820c94ae9398f97  inventory-service  WARN    unknown sku SKU-999
+10dc4a7e383621e90820c94ae9398f97  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+ad3ed87c809d2a48dd63c1999c34d0eb  inventory-service  WARN    unknown sku SKU-999
+b9c7828a7331bcf638be44cdfcc6b0c6  shop-frontend      ERROR   payment declined sku=SKU-200 qty=4
+ad3ed87c809d2a48dd63c1999c34d0eb  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+bb70c81ef2d7ff0f26c3013d1d5d9c99  shop-frontend      ERROR   payment declined sku=SKU-300 qty=1
+9e57598f25af9529fce6ede70896be02  inventory-service  WARN    unknown sku SKU-999
+066ef654b80bf49f0a5da6380f4dd9f6  shop-frontend      ERROR   payment declined sku=SKU-100 qty=3
+9e57598f25af9529fce6ede70896be02  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+7a45beb7cb019821bc354b488cedc168  shop-frontend      ERROR   payment declined sku=SKU-100 qty=3
+df461da2cb4ef9c104d500871dcfd6f4  shop-frontend      ERROR   payment declined sku=SKU-100 qty=4
+fb7429cc7adee7e7d3b79d39901cc112  shop-frontend      ERROR   payment declined sku=SKU-300 qty=3
+21ddad22ddab6cf7b31c709e5f666abe  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+21ddad22ddab6cf7b31c709e5f666abe  inventory-service  WARN    unknown sku SKU-999
+7c407c04b10e90bfb05fbc4f109d7610  shop-frontend      ERROR   payment declined sku=SKU-100 qty=3
+47e1b6434c65ce51510162c2684a4c28  shop-frontend      ERROR   payment declined sku=SKU-200 qty=4
+9478d4662cf73094b97fc81c32569778  inventory-service  WARN    unknown sku SKU-999
+9478d4662cf73094b97fc81c32569778  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+c089fd480b521c50a65e000f95c83dc2  shop-frontend      ERROR   payment declined sku=SKU-100 qty=3
+91984507860448d5d81bc5976c3cf802  inventory-service  WARN    unknown sku SKU-999
+6a4f48f9bd1aba99205ed55979ac0ab5  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+91984507860448d5d81bc5976c3cf802  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+6a4f48f9bd1aba99205ed55979ac0ab5  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+8aed66f07d87733744c12657c7ffe679  inventory-service  WARN    insufficient stock sku=SKU-300 requested=4 available=0
+8aed66f07d87733744c12657c7ffe679  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+93e08c05749190752554620746e07deb  inventory-service  WARN    insufficient stock sku=SKU-300 requested=4 available=0
+93e08c05749190752554620746e07deb  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+4f8b5c176a083387864d03269680bfa8  shop-frontend      ERROR   payment declined sku=SKU-100 qty=1
+557a26310f914382743b9f1f9baba7ee  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+d87c5e43a5cbb2a4ba8ed293586eda21  inventory-service  WARN    unknown sku SKU-999
+557a26310f914382743b9f1f9baba7ee  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+d87c5e43a5cbb2a4ba8ed293586eda21  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+8a1ddf1bc4ff649f408f1d1ef1c406c0  inventory-service  WARN    unknown sku SKU-999
+8a1ddf1bc4ff649f408f1d1ef1c406c0  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+f4c7c84cc63f3013fe01accf0e1d52e9  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+f4c7c84cc63f3013fe01accf0e1d52e9  inventory-service  WARN    insufficient stock sku=SKU-300 requested=1 available=0
+63a2032513094682ee43700bbc29fa03  inventory-service  WARN    insufficient stock sku=SKU-300 requested=1 available=0
+63a2032513094682ee43700bbc29fa03  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+1c6d464073009a2b1b00fcf3bfd2b619  shop-frontend      ERROR   payment declined sku=SKU-100 qty=2
+34c25bc3f15f9d6cee68f30b44ed9f4c  inventory-service  WARN    insufficient stock sku=SKU-300 requested=4 available=0
+065a7f3c112fc46b58339cae50b0569d  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+34c25bc3f15f9d6cee68f30b44ed9f4c  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+065a7f3c112fc46b58339cae50b0569d  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+5ae1cec89f84a2f0948cfbe74e628310  inventory-service  WARN    insufficient stock sku=SKU-300 requested=3 available=0
+5ae1cec89f84a2f0948cfbe74e628310  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+5c4dfad308bf9e1fe1609c7a26d78eda  shop-frontend      ERROR   payment declined sku=SKU-200 qty=3
+250352bfce36d4eb493e2af70c3f0483  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+250352bfce36d4eb493e2af70c3f0483  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+854020b0f6c0dfd01424b0f5716bd686  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+854020b0f6c0dfd01424b0f5716bd686  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+afed3a70b2e6a3f62f3ca202c63890da  inventory-service  WARN    insufficient stock sku=SKU-300 requested=1 available=0
+afed3a70b2e6a3f62f3ca202c63890da  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+74f29e5f1b7c3f470087aa803e2c05be  inventory-service  WARN    insufficient stock sku=SKU-300 requested=3 available=0
+9533c447a03e43217cbbf1c6277e3af5  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+74f29e5f1b7c3f470087aa803e2c05be  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+9533c447a03e43217cbbf1c6277e3af5  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+71ced4912c75b2faad0f585bd1ccdc60  inventory-service  WARN    unknown sku SKU-999
+71ced4912c75b2faad0f585bd1ccdc60  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+7fdeb11ea48c4851f53fa5f14a584ecd  inventory-service  WARN    insufficient stock sku=SKU-300 requested=3 available=0
+7fdeb11ea48c4851f53fa5f14a584ecd  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+90ed191512e6034f44ad09ea99e41e5b  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+90ed191512e6034f44ad09ea99e41e5b  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+1f2f4038a900ebac7b0b7dffe18f75ec  inventory-service  WARN    insufficient stock sku=SKU-300 requested=4 available=0
+bd6fde369a571e422755bea518e29f49  inventory-service  WARN    unknown sku SKU-999
+5c757a9b3a88b6cd5c1fa45452301407  shop-frontend      ERROR   payment declined sku=SKU-100 qty=4
+1f2f4038a900ebac7b0b7dffe18f75ec  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+bd6fde369a571e422755bea518e29f49  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+5b509cda26de9f3293229b8ead563c7c  inventory-service  WARN    unknown sku SKU-999
+5b509cda26de9f3293229b8ead563c7c  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+d2b6f2edf6cc9326c635dab59be2479e  shop-frontend      ERROR   payment declined sku=SKU-200 qty=3
+3e9c9b6d90b8eb86f67ecef3021798ee  inventory-service  WARN    insufficient stock sku=SKU-300 requested=1 available=0
+3e9c9b6d90b8eb86f67ecef3021798ee  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+314a6407705fd104ac99be636a7a971b  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+314a6407705fd104ac99be636a7a971b  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+73498e7b5f2efcdb1cbb8e780f6d49c1  inventory-service  WARN    insufficient stock sku=SKU-300 requested=4 available=0
+73498e7b5f2efcdb1cbb8e780f6d49c1  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+7e9ad5b410691025e06929324eeb0ce4  inventory-service  WARN    insufficient stock sku=SKU-300 requested=4 available=0
+7e9ad5b410691025e06929324eeb0ce4  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+6781d8ddb7ce35531aefc0045951ef76  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+6781d8ddb7ce35531aefc0045951ef76  inventory-service  WARN    unknown sku SKU-999
+7c82279367016715b56383e282f796f8  shop-frontend      ERROR   payment declined sku=SKU-100 qty=2
+f5d6fd1c8693bca078f53dd2a5946564  inventory-service  WARN    insufficient stock sku=SKU-300 requested=3 available=0
+e3c8a00b3851e19a3d28260f5b5100b0  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+c65cdededbba1f914120d75fea68c9e6  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+307ac91d4c49803308966ffe9353866e  inventory-service  WARN    insufficient stock sku=SKU-300 requested=3 available=0
+f5d6fd1c8693bca078f53dd2a5946564  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+e3c8a00b3851e19a3d28260f5b5100b0  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+c65cdededbba1f914120d75fea68c9e6  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+307ac91d4c49803308966ffe9353866e  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+7485584617f53a142dbed1b29016c261  inventory-service  WARN    insufficient stock sku=SKU-300 requested=3 available=0
+ce45ee9f3825ddd1b009c94eff3922a3  shop-frontend      ERROR   payment declined sku=SKU-100 qty=4
+7485584617f53a142dbed1b29016c261  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+ce0c38edfc4c81d2008aaf42b08d45a0  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+ce0c38edfc4c81d2008aaf42b08d45a0  inventory-service  WARN    insufficient stock sku=SKU-300 requested=3 available=0
+68a82ee53ad3133058a0889280f2180a  shop-frontend      ERROR   payment declined sku=SKU-100 qty=3
+763d2b84a29f8c0540bd4f9f2a5e8c8f  inventory-service  WARN    unknown sku SKU-999
+82b3ee566e9266306e3df7ba543033f0  inventory-service  WARN    unknown sku SKU-999
+763d2b84a29f8c0540bd4f9f2a5e8c8f  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+82b3ee566e9266306e3df7ba543033f0  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+3929fbd76c0374564f4fa5d7ee423272  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+3929fbd76c0374564f4fa5d7ee423272  inventory-service  WARN    insufficient stock sku=SKU-300 requested=4 available=0
+efae566969c11c0eec1db7f91d9290c1  inventory-service  WARN    insufficient stock sku=SKU-300 requested=1 available=0
+56238e69f1b12e132d8d8aad47d4a7a0  inventory-service  WARN    unknown sku SKU-999
+efae566969c11c0eec1db7f91d9290c1  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+56238e69f1b12e132d8d8aad47d4a7a0  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+762f8ad06df88c02aca073428cbcad3c  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+762f8ad06df88c02aca073428cbcad3c  inventory-service  WARN    unknown sku SKU-999
+15389b1dfc31dd9d69c9a09fb56d724c  inventory-service  WARN    insufficient stock sku=SKU-300 requested=1 available=0
+9745949c2f64814f6c323f060435be79  inventory-service  WARN    unknown sku SKU-999
+9d8e788adeed060b0390fb38c1a264af  inventory-service  WARN    unknown sku SKU-999
+15389b1dfc31dd9d69c9a09fb56d724c  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+9745949c2f64814f6c323f060435be79  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+9d8e788adeed060b0390fb38c1a264af  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+10b0d1a77146fbc54c46fa7314898bad  inventory-service  WARN    unknown sku SKU-999
+10b0d1a77146fbc54c46fa7314898bad  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+4b00f29d7cdd891eb9e19a7cd2676ca7  shop-frontend      ERROR   payment declined sku=SKU-200 qty=3
+35618efdf620912c3a7da1067d9c81cc  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+35618efdf620912c3a7da1067d9c81cc  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+8f8a8899bc4e76f496f40bdec81de406  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+8f8a8899bc4e76f496f40bdec81de406  inventory-service  WARN    insufficient stock sku=SKU-300 requested=4 available=0
+83b919cfb903e1e4b2c14c92d3c7d8d6  inventory-service  WARN    unknown sku SKU-999
+83b919cfb903e1e4b2c14c92d3c7d8d6  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+0cb2ba3abbd65583b5355129d772e322  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+cf09094cdc8b957a1283b636ce9c28c8  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+0cb2ba3abbd65583b5355129d772e322  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+cf09094cdc8b957a1283b636ce9c28c8  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+b7c4dcebff5b43d9cb39e77bb1443dd5  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+b7c4dcebff5b43d9cb39e77bb1443dd5  inventory-service  WARN    unknown sku SKU-999
+7b09ab78a141b60675758089b4ba48ec  inventory-service  WARN    insufficient stock sku=SKU-300 requested=1 available=0
+7b09ab78a141b60675758089b4ba48ec  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+e143838758daf7b27648dded89f41de9  inventory-service  WARN    insufficient stock sku=SKU-300 requested=3 available=0
+e143838758daf7b27648dded89f41de9  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+055d545a0094088556b7b402a1514668  inventory-service  WARN    insufficient stock sku=SKU-300 requested=3 available=0
+055d545a0094088556b7b402a1514668  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+87b138eb8de60c17f4367e9fc0c430db  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+87b138eb8de60c17f4367e9fc0c430db  inventory-service  WARN    insufficient stock sku=SKU-300 requested=4 available=0
+e04321bc90568ff509a624da7a39fc93  inventory-service  WARN    unknown sku SKU-999
+2df865312a6190eb7096479fb967e803  inventory-service  WARN    insufficient stock sku=SKU-300 requested=4 available=0
+e04321bc90568ff509a624da7a39fc93  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+2df865312a6190eb7096479fb967e803  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+309fca8370973307cee4177816c3ddb6  inventory-service  WARN    insufficient stock sku=SKU-300 requested=3 available=0
+309fca8370973307cee4177816c3ddb6  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+463bed6a4037be293c82ba80eae2d489  inventory-service  WARN    insufficient stock sku=SKU-300 requested=3 available=0
+12f3ec39590da3dff2367c968b0fd988  inventory-service  WARN    insufficient stock sku=SKU-300 requested=4 available=0
+0162d74c6ae68e1cd3b9e696839d31f6  inventory-service  WARN    unknown sku SKU-999
+463bed6a4037be293c82ba80eae2d489  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+12f3ec39590da3dff2367c968b0fd988  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+0162d74c6ae68e1cd3b9e696839d31f6  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+48377bd8693f33148a8d6640b8774a42  shop-frontend      ERROR   payment declined sku=SKU-100 qty=1
+f2f36d020d55f1b29f7f64e36c35c4e0  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+f2f36d020d55f1b29f7f64e36c35c4e0  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+f6d080f8bab004522d4814a87b41ab8b  inventory-service  WARN    insufficient stock sku=SKU-300 requested=4 available=0
+5f6f51b478d8121d924a01d215fef28f  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+f6d080f8bab004522d4814a87b41ab8b  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+bf91549ac737754da246bbe05828bbbe  shop-frontend      ERROR   payment declined sku=SKU-200 qty=3
+5f6f51b478d8121d924a01d215fef28f  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+d83ff9a70c086cb6c28f7d2f0f857268  inventory-service  WARN    insufficient stock sku=SKU-300 requested=4 available=0
+d83ff9a70c086cb6c28f7d2f0f857268  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+317a7c90b79a475b6b77f7d52c26c821  inventory-service  WARN    unknown sku SKU-999
+e522be926b03130c5ba76567f5663e6a  inventory-service  WARN    unknown sku SKU-999
+317a7c90b79a475b6b77f7d52c26c821  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+e522be926b03130c5ba76567f5663e6a  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+cedcd145c5fd84d4e6eda3456979f93d  shop-frontend      ERROR   payment declined sku=SKU-100 qty=1
+c802c152128aecc5c1b48accd2e3116e  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+c802c152128aecc5c1b48accd2e3116e  inventory-service  WARN    insufficient stock sku=SKU-300 requested=4 available=0
+3fe205611264569989c40f7d89abb98d  inventory-service  WARN    insufficient stock sku=SKU-300 requested=3 available=0
+3fe205611264569989c40f7d89abb98d  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+bebbec11b5241117cbb3b730a6a927ee  inventory-service  WARN    insufficient stock sku=SKU-300 requested=4 available=0
+bf6966814663a881816015a4ea1808f9  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+500b63610a6d18d0a2ff7db9541eb618  inventory-service  WARN    insufficient stock sku=SKU-300 requested=3 available=0
+bebbec11b5241117cbb3b730a6a927ee  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+bf6966814663a881816015a4ea1808f9  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+500b63610a6d18d0a2ff7db9541eb618  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+4d10a015e2875543535e460784b5b268  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+4d10a015e2875543535e460784b5b268  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+1665637bd8ed15db52adf62db296590d  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+1665637bd8ed15db52adf62db296590d  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+70b1b48fb2b3b9b4afa4bd3d02e784a3  inventory-service  WARN    unknown sku SKU-999
+9f3c1ffd8cf4ac8d19aaff51be3980e4  inventory-service  WARN    insufficient stock sku=SKU-300 requested=1 available=0
+70b1b48fb2b3b9b4afa4bd3d02e784a3  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+9f3c1ffd8cf4ac8d19aaff51be3980e4  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+e02c4f706be8eaa72b805c236c76cc35  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+e02c4f706be8eaa72b805c236c76cc35  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+5c2340386b43a43e06ecfe4028b216c0  inventory-service  WARN    unknown sku SKU-999
+5c2340386b43a43e06ecfe4028b216c0  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+f692194cc06d6d753fa5027646a4b476  shop-frontend      ERROR   payment declined sku=SKU-100 qty=2
+962d50c149c3df397c75af4e9ca66abf  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+205f8d56bed5d1f9648be6157afad86e  inventory-service  WARN    unknown sku SKU-999
+962d50c149c3df397c75af4e9ca66abf  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+205f8d56bed5d1f9648be6157afad86e  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+4460f6c585d9fba6164d4add4e355376  inventory-service  WARN    unknown sku SKU-999
+4460f6c585d9fba6164d4add4e355376  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+fe242e0356853333bfb23c2f15f7823e  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+fe242e0356853333bfb23c2f15f7823e  inventory-service  WARN    insufficient stock sku=SKU-300 requested=1 available=0
+71479cfec06ded1c539f6e9ed8aa9633  inventory-service  WARN    insufficient stock sku=SKU-300 requested=3 available=0
+99bf1578786e609e30188792f0fe50fc  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+71479cfec06ded1c539f6e9ed8aa9633  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+99bf1578786e609e30188792f0fe50fc  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+e17fcd797afde3398ae697cb696fd75b  inventory-service  WARN    unknown sku SKU-999
+e17fcd797afde3398ae697cb696fd75b  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+32964481aa53f33c5c1df4cd21b10284  inventory-service  WARN    unknown sku SKU-999
+9b4bbb006e2bc2251fc7583622bb29b9  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+32964481aa53f33c5c1df4cd21b10284  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+9b4bbb006e2bc2251fc7583622bb29b9  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+4dd038c0c2e8415ee9ded2020637a546  inventory-service  WARN    insufficient stock sku=SKU-300 requested=2 available=0
+d6b076c0643259cdc52a9f7b575d2828  inventory-service  WARN    unknown sku SKU-999
+4dd038c0c2e8415ee9ded2020637a546  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+2a6ad905927d9d00bf4f24f20e0e54bb  shop-frontend      ERROR   payment declined sku=SKU-200 qty=1
+66154c9d407d87babfcfddce82feec7e  shop-frontend      ERROR   payment declined sku=SKU-200 qty=2
+d6b076c0643259cdc52a9f7b575d2828  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+53f9f3fc5808d3f2707ddb2f7b4b8e92  inventory-service  WARN    insufficient stock sku=SKU-300 requested=4 available=0
+53f9f3fc5808d3f2707ddb2f7b4b8e92  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+346cdf0114e6cf3a73d14878312ec0a4  inventory-service  WARN    insufficient stock sku=SKU-300 requested=3 available=0
+886033d8cc44ee8070ff81ce772e6324  inventory-service  WARN    insufficient stock sku=SKU-300 requested=3 available=0
+702feb5d6a558112d77e968bef4bb9c6  inventory-service  WARN    unknown sku SKU-999
+346cdf0114e6cf3a73d14878312ec0a4  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+886033d8cc44ee8070ff81ce772e6324  shop-frontend      WARN    purchase rejected sku=SKU-300: out of stock
+702feb5d6a558112d77e968bef4bb9c6  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+721e54cd89ec62536cf1ff88a5be2441  inventory-service  WARN    unknown sku SKU-999
+721e54cd89ec62536cf1ff88a5be2441  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999
+ad28ea01479d1863f76dc36a5373ff41  inventory-service  WARN    unknown sku SKU-999
+ad28ea01479d1863f76dc36a5373ff41  shop-frontend      WARN    purchase rejected sku=SKU-999: unknown sku SKU-999

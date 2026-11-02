@@ -1,0 +1,7 @@
+checkout started for A9-2001 (1 items)
+order A9-2001 completed
+checkout started for A9-2002 (2 items)
+order A9-2002 completed
+checkout started for A9-2003 (3 items)
+payment declined for A9-2003
+sent 3 traces and their logs to http://localhost:4317

@@ -1,0 +1,248 @@
+{
+    "name": "validate-cart",
+    "context": {
+        "trace_id": "0x8153f7d932d6fc19075ea42851074e1e",
+        "span_id": "0x35f3cd61695a559e",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xdfc75d130a9cce77",
+    "start_time": "2026-11-02T21:44:24.699734Z",
+    "end_time": "2026-11-02T21:44:24.715543Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.45.2",
+            "service.instance.id": "be4ae777-3092-4c3a-be2a-8b8674f84506",
+            "service.name": "checkout-demo",
+            "service.version": "1.0.0",
+            "deployment.environment": "local"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "db.update-stock",
+    "context": {
+        "trace_id": "0x8153f7d932d6fc19075ea42851074e1e",
+        "span_id": "0x2d93bd2d120fbf6b",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xd23774a402c201ea",
+    "start_time": "2026-11-02T21:44:24.716529Z",
+    "end_time": "2026-11-02T21:44:24.731794Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "db.system": "sqlite",
+        "sku": "SKU-100"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.45.2",
+            "service.instance.id": "be4ae777-3092-4c3a-be2a-8b8674f84506",
+            "service.name": "checkout-demo",
+            "service.version": "1.0.0",
+            "deployment.environment": "local"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "db.update-stock",
+    "context": {
+        "trace_id": "0x8153f7d932d6fc19075ea42851074e1e",
+        "span_id": "0x2455cd3e2a82217c",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xd23774a402c201ea",
+    "start_time": "2026-11-02T21:44:24.731794Z",
+    "end_time": "2026-11-02T21:44:24.746760Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "db.system": "sqlite",
+        "sku": "SKU-101"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.45.2",
+            "service.instance.id": "be4ae777-3092-4c3a-be2a-8b8674f84506",
+            "service.name": "checkout-demo",
+            "service.version": "1.0.0",
+            "deployment.environment": "local"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "reserve-stock",
+    "context": {
+        "trace_id": "0x8153f7d932d6fc19075ea42851074e1e",
+        "span_id": "0xd23774a402c201ea",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xdfc75d130a9cce77",
+    "start_time": "2026-11-02T21:44:24.716529Z",
+    "end_time": "2026-11-02T21:44:24.746760Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "warehouse": "TPE-1"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.45.2",
+            "service.instance.id": "be4ae777-3092-4c3a-be2a-8b8674f84506",
+            "service.name": "checkout-demo",
+            "service.version": "1.0.0",
+            "deployment.environment": "local"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "charge-payment",
+    "context": {
+        "trace_id": "0x8153f7d932d6fc19075ea42851074e1e",
+        "span_id": "0x43c126dd53ecea2f",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xdfc75d130a9cce77",
+    "start_time": "2026-11-02T21:44:24.746760Z",
+    "end_time": "2026-11-02T21:44:24.777170Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "payment.method": "card"
+    },
+    "events": [
+        {
+            "name": "first attempt timed out",
+            "timestamp": "2026-11-02T21:44:24.746760Z",
+            "attributes": {
+                "retry.after_ms": 20
+            }
+        },
+        {
+            "name": "charged",
+            "timestamp": "2026-11-02T21:44:24.777170Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.45.2",
+            "service.instance.id": "be4ae777-3092-4c3a-be2a-8b8674f84506",
+            "service.name": "checkout-demo",
+            "service.version": "1.0.0",
+            "deployment.environment": "local"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "send-email",
+    "context": {
+        "trace_id": "0x8153f7d932d6fc19075ea42851074e1e",
+        "span_id": "0x326a4068ec773434",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xdfc75d130a9cce77",
+    "start_time": "2026-11-02T21:44:24.777170Z",
+    "end_time": "2026-11-02T21:44:24.777170Z",
+    "status": {
+        "status_code": "ERROR",
+        "description": "SMTP server unreachable"
+    },
+    "attributes": {},
+    "events": [
+        {
+            "name": "exception",
+            "timestamp": "2026-11-02T21:44:24.777170Z",
+            "attributes": {
+                "exception.type": "ConnectionError",
+                "exception.message": "SMTP server unreachable",
+                "exception.stacktrace": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Downloads\\\u5927\u4e09\u4e0a\\DevOps\\A9\\task1\\console_demo.py\", line 72, in checkout\n    raise ConnectionError(\"SMTP server unreachable\")\nConnectionError: SMTP server unreachable\n",
+                "exception.escaped": "False"
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.45.2",
+            "service.instance.id": "be4ae777-3092-4c3a-be2a-8b8674f84506",
+            "service.name": "checkout-demo",
+            "service.version": "1.0.0",
+            "deployment.environment": "local"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "checkout",
+    "context": {
+        "trace_id": "0x8153f7d932d6fc19075ea42851074e1e",
+        "span_id": "0xdfc75d130a9cce77",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-11-02T21:44:24.699734Z",
+    "end_time": "2026-11-02T21:44:24.777170Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "order.id": "A9-1001",
+        "order.items": 2
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.45.2",
+            "service.instance.id": "be4ae777-3092-4c3a-be2a-8b8674f84506",
+            "service.name": "checkout-demo",
+            "service.version": "1.0.0",
+            "deployment.environment": "local"
+        },
+        "schema_url": ""
+    }
+}

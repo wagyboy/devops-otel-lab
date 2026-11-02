@@ -1,0 +1,6 @@
+NAME                                IMAGE                                          STATUS         PORTS
+a9-observability-frontend-1         a9-observability-frontend                      Up 6 minutes   0.0.0.0:8080->8080/tcp
+a9-observability-inventory-1        a9-observability-inventory                     Up 6 minutes   
+a9-observability-jaeger-1           jaegertracing/jaeger:2.22.0                    Up 6 minutes   0.0.0.0:16686->16686/tcp
+a9-observability-otel-collector-1   otel/opentelemetry-collector-contrib:0.164.0   Up 6 minutes   0.0.0.0:4317->4317/tcp, 0.0.0.0:18889->8889/tcp
+a9-observability-prometheus-1       prom/prometheus:v3.15.1                        Up 6 minutes   0.0.0.0:19090->9090/tcp

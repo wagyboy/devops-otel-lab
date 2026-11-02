@@ -1,0 +1,45 @@
+# Task 2: OpenTelemetry Collector
+# app --OTLP/gRPC :4317--> receiver -> processors -> exporters (console + local file)
+
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317   # the assignment's OTLP port
+      http:
+        endpoint: 0.0.0.0:4318   # OTLP/HTTP, handy for curl tests
+
+processors:
+  memory_limiter:                # first: refuse data instead of crashing when memory is tight
+    check_interval: 1s
+    limit_mib: 256
+  resource:                      # stamp every record with where it passed through
+    attributes:
+      - key: collector.name
+        value: a9-collector
+        action: upsert
+  batch:                         # last: group records to cut export calls
+    timeout: 2s
+    send_batch_size: 256
+
+exporters:
+  debug:                         # print to the container log (docker logs otel-collector)
+    verbosity: detailed
+  file:                          # one JSON line per batch, on the host via the volume
+    path: /output/telemetry.jsonl
+
+extensions:
+  health_check:
+    endpoint: 0.0.0.0:13133
+
+service:
+  extensions: [health_check]
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [memory_limiter, resource, batch]
+      exporters: [debug, file]
+    logs:
+      receivers: [otlp]
+      processors: [memory_limiter, resource, batch]
+      exporters: [debug, file]

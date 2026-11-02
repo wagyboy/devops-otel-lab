@@ -1,0 +1,3 @@
+2026-11-02 22:03:26,196 INFO [inventory-service] [trace_id=66154c9d407d87babfcfddce82feec7e span_id=65afc1f830033cde] reserved sku=SKU-200 qty=2 tier=premium left=1118
+2026-11-02 22:03:26,178 INFO [shop-frontend] [trace_id=66154c9d407d87babfcfddce82feec7e span_id=ee89e043d9a31872] purchase request sku=SKU-200 qty=2 tier=premium
+2026-11-02 22:03:26,247 ERROR [shop-frontend] [trace_id=66154c9d407d87babfcfddce82feec7e span_id=184b2c294a64542b] payment declined sku=SKU-200 qty=2

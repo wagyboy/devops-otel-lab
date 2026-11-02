@@ -1,0 +1,4 @@
+3 log records for trace 66154c9d407d87babfcfddce82feec7e
+  shop-frontend      span=ee89e043d9a31872 INFO    purchase request sku=SKU-200 qty=2 tier=premium
+  inventory-service  span=65afc1f830033cde INFO    reserved sku=SKU-200 qty=2 tier=premium left=1118
+  shop-frontend      span=184b2c294a64542b ERROR   payment declined sku=SKU-200 qty=2

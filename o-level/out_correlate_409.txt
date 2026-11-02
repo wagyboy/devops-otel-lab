@@ -1,0 +1,4 @@
+3 log records for trace 886033d8cc44ee8070ff81ce772e6324
+  shop-frontend      span=e538a2669d6dc545 INFO    purchase request sku=SKU-300 qty=3 tier=free
+  inventory-service  span=46a5b9c027de557c WARN    insufficient stock sku=SKU-300 requested=3 available=0
+  shop-frontend      span=e538a2669d6dc545 WARN    purchase rejected sku=SKU-300: out of stock

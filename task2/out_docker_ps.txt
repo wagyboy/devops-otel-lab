@@ -1,0 +1,2 @@
+NAMES            IMAGE                                          STATUS          PORTS
+otel-collector   otel/opentelemetry-collector-contrib:0.164.0   Up 20 seconds   0.0.0.0:4317-4318->4317-4318/tcp, [::]:4317-4318->4317-4318/tcp, 0.0.0.0:13133->13133/tcp, [::]:13133->13133/tcp

@@ -1,0 +1,244 @@
+2026-11-02T21:51:24.279Z	info	otelconftelemetry/tracer.go:47	Internal trace telemetry disabled	{"resource": {"service.instance.id": "dfe35ff7-7c83-42e3-97fb-0ce2bd130e4b", "service.name": "otelcol-contrib", "service.version": "0.164.0"}}
+2026-11-02T21:51:24.279Z	info	memorylimiter@v0.164.0/memorylimiter.go:109	Memory limiter configured	{"resource": {"service.instance.id": "dfe35ff7-7c83-42e3-97fb-0ce2bd130e4b", "service.name": "otelcol-contrib", "service.version": "0.164.0"}, "otelcol.component.kind": "processor", "limit_mib": 256, "spike_limit_mib": 51, "check_interval": 1}
+2026-11-02T21:51:24.280Z	info	service@v0.164.0/service.go:233	Starting otelcol-contrib...	{"resource": {"service.instance.id": "dfe35ff7-7c83-42e3-97fb-0ce2bd130e4b", "service.name": "otelcol-contrib", "service.version": "0.164.0"}, "Version": "0.164.0", "NumCPU": 32}
+2026-11-02T21:51:24.280Z	info	extensions/extensions.go:43	Starting extensions...	{"resource": {"service.instance.id": "dfe35ff7-7c83-42e3-97fb-0ce2bd130e4b", "service.name": "otelcol-contrib", "service.version": "0.164.0"}}
+2026-11-02T21:51:24.280Z	info	extensions/extensions.go:47	Extension is starting...	{"resource": {"service.instance.id": "dfe35ff7-7c83-42e3-97fb-0ce2bd130e4b", "service.name": "otelcol-contrib", "service.version": "0.164.0"}, "otelcol.component.id": "health_check", "otelcol.component.kind": "extension"}
+2026-11-02T21:51:24.280Z	info	healthcheckextension@v0.164.1/healthcheckextension.go:32	Starting health_check extension	{"resource": {"service.instance.id": "dfe35ff7-7c83-42e3-97fb-0ce2bd130e4b", "service.name": "otelcol-contrib", "service.version": "0.164.0"}, "otelcol.component.id": "health_check", "otelcol.component.kind": "extension", "config": {"Config":{"ServerConfig":{"NetAddr":{"DialerConfig":{"Timeout":0},"Endpoint":"0.0.0.0:13133","Transport":"tcp"},"TLS":{},"CORS":{},"Auth":{},"MaxRequestBodySize":0,"IncludeMetadata":false,"ResponseHeaders":null,"CompressionAlgorithms":null,"ReadTimeout":0,"ReadHeaderTimeout":60000000000,"WriteTimeout":30000000000,"Middlewares":null,"Keepalive":{},"IdleTimeout":0,"KeepAlivesEnabled":false},"Path":"/","ResponseBody":null,"CheckCollectorPipeline":{"Enabled":false,"Interval":"5m","ExporterFailureThreshold":5},"UseV2":false,"GRPCConfig":null,"HTTPConfig":null,"ComponentHealthConfig":null}}}
+2026-11-02T21:51:24.280Z	info	extensions/extensions.go:65	Extension started.	{"resource": {"service.instance.id": "dfe35ff7-7c83-42e3-97fb-0ce2bd130e4b", "service.name": "otelcol-contrib", "service.version": "0.164.0"}, "otelcol.component.id": "health_check", "otelcol.component.kind": "extension"}
+2026-11-02T21:51:24.287Z	info	otlpreceiver@v0.164.0/otlp.go:120	Starting GRPC server	{"resource": {"service.instance.id": "dfe35ff7-7c83-42e3-97fb-0ce2bd130e4b", "service.name": "otelcol-contrib", "service.version": "0.164.0"}, "otelcol.component.id": "otlp", "otelcol.component.kind": "receiver", "endpoint": "[::]:4317"}
+2026-11-02T21:51:24.287Z	info	otlpreceiver@v0.164.0/otlp.go:175	Starting HTTP server	{"resource": {"service.instance.id": "dfe35ff7-7c83-42e3-97fb-0ce2bd130e4b", "service.name": "otelcol-contrib", "service.version": "0.164.0"}, "otelcol.component.id": "otlp", "otelcol.component.kind": "receiver", "endpoint": "[::]:4318"}
+2026-11-02T21:51:24.287Z	info	healthcheck/handler.go:131	Health Check state change	{"resource": {"service.instance.id": "dfe35ff7-7c83-42e3-97fb-0ce2bd130e4b", "service.name": "otelcol-contrib", "service.version": "0.164.0"}, "otelcol.component.id": "health_check", "otelcol.component.kind": "extension", "status": "ready"}
+2026-11-02T21:51:24.287Z	info	service@v0.164.0/service.go:256	Everything is ready. Begin running and processing data.	{"resource": {"service.instance.id": "dfe35ff7-7c83-42e3-97fb-0ce2bd130e4b", "service.name": "otelcol-contrib", "service.version": "0.164.0"}}
+2026-11-02T21:51:36.287Z	info	Logs	{"resource": {"service.instance.id": "dfe35ff7-7c83-42e3-97fb-0ce2bd130e4b", "service.name": "otelcol-contrib", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "resource logs": 1, "log records": 6}
+2026-11-02T21:51:36.287Z	info	ResourceLog #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.45.2)
+     -> service.instance.id: Str(dc28e009-2041-4ca4-bf2c-a5711838cd87)
+     -> service.name: Str(checkout-demo)
+     -> service.version: Str(1.1.0)
+     -> deployment.environment: Str(docker-lab)
+     -> collector.name: Str(a9-collector)
+ScopeLogs #0
+ScopeLogs SchemaURL: 
+InstrumentationScope checkout 
+LogRecord #0
+ObservedTimestamp: 2026-11-02 21:51:34.7117428 +0000 UTC
+Timestamp: 2026-11-02 21:51:34.71174272 +0000 UTC
+SeverityText: INFO
+SeverityNumber: Info(9)
+Body: Str(checkout started for A9-2001 (1 items))
+Attributes:
+     -> code.file.path: Str(C:\Users\USER\Downloads\大三上\DevOps\A9\task2\send_telemetry.py)
+     -> code.function.name: Str(checkout)
+     -> code.line.number: Int(44)
+Trace ID: 1a9313c7439cd7d1268e52dc74eb81d0
+Span ID: 7df9891988fbe026
+Flags: 3
+LogRecord #1
+ObservedTimestamp: 2026-11-02 21:51:34.7720736 +0000 UTC
+Timestamp: 2026-11-02 21:51:34.772073472 +0000 UTC
+SeverityText: INFO
+SeverityNumber: Info(9)
+Body: Str(order A9-2001 completed)
+Attributes:
+     -> code.file.path: Str(C:\Users\USER\Downloads\大三上\DevOps\A9\task2\send_telemetry.py)
+     -> code.function.name: Str(checkout)
+     -> code.line.number: Int(53)
+Trace ID: 1a9313c7439cd7d1268e52dc74eb81d0
+Span ID: 7df9891988fbe026
+Flags: 3
+LogRecord #2
+ObservedTimestamp: 2026-11-02 21:51:34.7720736 +0000 UTC
+Timestamp: 2026-11-02 21:51:34.772073472 +0000 UTC
+SeverityText: INFO
+SeverityNumber: Info(9)
+Body: Str(checkout started for A9-2002 (2 items))
+Attributes:
+     -> code.file.path: Str(C:\Users\USER\Downloads\大三上\DevOps\A9\task2\send_telemetry.py)
+     -> code.function.name: Str(checkout)
+     -> code.line.number: Int(44)
+Trace ID: fba733f8dd071545812f920d27a32d60
+Span ID: 9ae957ef544f8889
+Flags: 3
+LogRecord #3
+ObservedTimestamp: 2026-11-02 21:51:34.8340872 +0000 UTC
+Timestamp: 2026-11-02 21:51:34.834087168 +0000 UTC
+SeverityText: INFO
+SeverityNumber: Info(9)
+Body: Str(order A9-2002 completed)
+Attributes:
+     -> code.file.path: Str(C:\Users\USER\Downloads\大三上\DevOps\A9\task2\send_telemetry.py)
+     -> code.function.name: Str(checkout)
+     -> code.line.number: Int(53)
+Trace ID: fba733f8dd071545812f920d27a32d60
+Span ID: 9ae957ef544f8889
+Flags: 3
+LogRecord #4
+ObservedTimestamp: 2026-11-02 21:51:34.8340872 +0000 UTC
+Timestamp: 2026-11-02 21:51:34.834087168 +0000 UTC
+SeverityText: INFO
+SeverityNumber: Info(9)
+Body: Str(checkout started for A9-2003 (3 items))
+Attributes:
+     -> code.file.path: Str(C:\Users\USER\Downloads\大三上\DevOps\A9\task2\send_telemetry.py)
+     -> code.function.name: Str(checkout)
+     -> code.line.number: Int(44)
+Trace ID: ce958487e39b6eae9b450e32d32819cc
+Span ID: 109292a26fb06d66
+Flags: 3
+LogRecord #5
+ObservedTimestamp: 2026-11-02 21:51:34.9129863 +0000 UTC
+Timestamp: 2026-11-02 21:51:34.912986368 +0000 UTC
+SeverityText: ERROR
+SeverityNumber: Error(17)
+Body: Str(payment declined for A9-2003)
+Attributes:
+     -> code.file.path: Str(C:\Users\USER\Downloads\大三上\DevOps\A9\task2\send_telemetry.py)
+     -> code.function.name: Str(checkout)
+     -> code.line.number: Int(51)
+Trace ID: ce958487e39b6eae9b450e32d32819cc
+Span ID: bdabb92684c531eb
+Flags: 3
+	{"resource": {"service.instance.id": "dfe35ff7-7c83-42e3-97fb-0ce2bd130e4b", "service.name": "otelcol-contrib", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "logs"}
+2026-11-02T21:51:36.290Z	info	Traces	{"resource": {"service.instance.id": "dfe35ff7-7c83-42e3-97fb-0ce2bd130e4b", "service.name": "otelcol-contrib", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 9}
+2026-11-02T21:51:36.290Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.45.2)
+     -> service.instance.id: Str(dc28e009-2041-4ca4-bf2c-a5711838cd87)
+     -> service.name: Str(checkout-demo)
+     -> service.version: Str(1.1.0)
+     -> deployment.environment: Str(docker-lab)
+     -> collector.name: Str(a9-collector)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope a9.checkout 
+Span #0
+    Trace ID       : 1a9313c7439cd7d1268e52dc74eb81d0
+    Parent ID      : 7df9891988fbe026
+    ID             : 75b138527096f8fc
+    Name           : reserve-stock
+    Kind           : Internal
+    Start time     : 2026-11-02 21:51:34.7127424 +0000 UTC
+    End time       : 2026-11-02 21:51:34.7393995 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Span #1
+    Trace ID       : 1a9313c7439cd7d1268e52dc74eb81d0
+    Parent ID      : 7df9891988fbe026
+    ID             : e06ea943c09427a6
+    Name           : charge-payment
+    Kind           : Internal
+    Start time     : 2026-11-02 21:51:34.7393995 +0000 UTC
+    End time       : 2026-11-02 21:51:34.7720736 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Span #2
+    Trace ID       : 1a9313c7439cd7d1268e52dc74eb81d0
+    Parent ID      : 
+    ID             : 7df9891988fbe026
+    Name           : checkout
+    Kind           : Internal
+    Start time     : 2026-11-02 21:51:34.7117428 +0000 UTC
+    End time       : 2026-11-02 21:51:34.7720736 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> order.id: Str(A9-2001)
+Span #3
+    Trace ID       : fba733f8dd071545812f920d27a32d60
+    Parent ID      : 9ae957ef544f8889
+    ID             : 77dd5bdd5d367eb4
+    Name           : reserve-stock
+    Kind           : Internal
+    Start time     : 2026-11-02 21:51:34.7720736 +0000 UTC
+    End time       : 2026-11-02 21:51:34.7878593 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Span #4
+    Trace ID       : fba733f8dd071545812f920d27a32d60
+    Parent ID      : 9ae957ef544f8889
+    ID             : 0be2fb2ea5194e90
+    Name           : charge-payment
+    Kind           : Internal
+    Start time     : 2026-11-02 21:51:34.7878593 +0000 UTC
+    End time       : 2026-11-02 21:51:34.8340872 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Span #5
+    Trace ID       : fba733f8dd071545812f920d27a32d60
+    Parent ID      : 
+    ID             : 9ae957ef544f8889
+    Name           : checkout
+    Kind           : Internal
+    Start time     : 2026-11-02 21:51:34.7720736 +0000 UTC
+    End time       : 2026-11-02 21:51:34.8340872 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> order.id: Str(A9-2002)
+Span #6
+    Trace ID       : ce958487e39b6eae9b450e32d32819cc
+    Parent ID      : 109292a26fb06d66
+    ID             : 5e46133ed3018998
+    Name           : reserve-stock
+    Kind           : Internal
+    Start time     : 2026-11-02 21:51:34.8340872 +0000 UTC
+    End time       : 2026-11-02 21:51:34.8658459 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Span #7
+    Trace ID       : ce958487e39b6eae9b450e32d32819cc
+    Parent ID      : 109292a26fb06d66
+    ID             : bdabb92684c531eb
+    Name           : charge-payment
+    Kind           : Internal
+    Start time     : 2026-11-02 21:51:34.8658459 +0000 UTC
+    End time       : 2026-11-02 21:51:34.9129863 +0000 UTC
+    Status code    : Error
+    Status message : card declined
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Span #8
+    Trace ID       : ce958487e39b6eae9b450e32d32819cc
+    Parent ID      : 
+    ID             : 109292a26fb06d66
+    Name           : checkout
+    Kind           : Internal
+    Start time     : 2026-11-02 21:51:34.8340872 +0000 UTC
+    End time       : 2026-11-02 21:51:34.9129863 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> order.id: Str(A9-2003)
+	{"resource": {"service.instance.id": "dfe35ff7-7c83-42e3-97fb-0ce2bd130e4b", "service.name": "otelcol-contrib", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}

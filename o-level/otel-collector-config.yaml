@@ -1,0 +1,69 @@
+# O level: one Collector, three pipelines, plus a connector that bridges two of them.
+#
+#   traces  : otlp -> [memory_limiter, resource, batch] -> jaeger, spanmetrics(connector)
+#   metrics : otlp + spanmetrics -> [memory_limiter, resource, batch] -> prometheus
+#   logs    : otlp -> [memory_limiter, resource, batch] -> file, debug
+
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+      http:
+        endpoint: 0.0.0.0:4318
+
+processors:
+  memory_limiter:
+    check_interval: 1s
+    limit_mib: 384
+  resource:
+    attributes:
+      - key: collector.name
+        value: a9-collector
+        action: upsert
+  batch:
+    timeout: 2s
+
+connectors:
+  spanmetrics:                     # turns every span into request-rate / error / duration metrics
+    namespace: traces.span.metrics
+    histogram:
+      explicit:
+        buckets: [5ms, 10ms, 25ms, 50ms, 100ms, 250ms, 500ms, 1s]
+    dimensions:
+      - name: http.response.status_code
+      - name: user.tier
+
+exporters:
+  otlp/jaeger:                     # traces to Jaeger (it speaks OTLP natively)
+    endpoint: jaeger:4317
+    tls:
+      insecure: true
+  prometheus:                      # metrics exposed on :8889 for Prometheus to scrape
+    endpoint: 0.0.0.0:8889
+    resource_to_telemetry_conversion:
+      enabled: true                # service.name etc. become Prometheus labels
+  file/logs:                       # logs kept on disk, each line has traceId / spanId
+    path: /output/logs.jsonl
+  debug:
+    verbosity: basic
+
+extensions:
+  health_check:
+    endpoint: 0.0.0.0:13133
+
+service:
+  extensions: [health_check]
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [memory_limiter, resource, batch]
+      exporters: [otlp/jaeger, spanmetrics]
+    metrics:
+      receivers: [otlp, spanmetrics]
+      processors: [memory_limiter, resource, batch]
+      exporters: [prometheus]
+    logs:
+      receivers: [otlp]
+      processors: [memory_limiter, resource, batch]
+      exporters: [file/logs, debug]
