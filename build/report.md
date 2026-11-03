@@ -2,7 +2,7 @@
 
 **Name:** 陳致安 · **Student ID:** B11309058 · **Course:** DevOps · **Date:** November 3, 2026
 **Code:** <https://github.com/wagyboy/devops-otel-lab>
-**Stack:** Python 3.10 / 3.12 · OpenTelemetry SDK 1.45.2 (instrumentation 0.66b2) · Docker Desktop 29.9.2 · OTel Collector Contrib 0.164.0 · Jaeger 2.22.0 · Prometheus 3.15.1
+**Stack:** Python 3.10 / 3.12 · OpenTelemetry SDK 1.45.2 (instrumentation 0.66b2) · Docker Desktop 29.9.2 · OTel Collector 0.164.0 (core image for Task 2, contrib for Task 3) · Jaeger 2.22.0 · Prometheus 3.15.1
 
 | Level | What I built | Section |
 | --- | --- | --- |
@@ -70,7 +70,7 @@ Swapping the `ConsoleSpanExporter` for an `OTLPSpanExporter` (Task 2) changes th
 
 ## 3. Task 2 (E): Dockerized OpenTelemetry Collector over OTLP
 
-**Install and run.** I installed Docker Desktop (WSL 2 backend) and ran the official image `otel/opentelemetry-collector-contrib:0.164.0` from Docker Hub. The core image already includes the `file` exporter; I used the *contrib* distribution so that one image covers every component in this report, including the `spanmetrics` connector and Prometheus exporter in Section 4. `task2/docker-compose.yml` mounts the config read-only, mounts `./output` for the exported file, and publishes 4317 (OTLP gRPC), 4318 (OTLP HTTP) and 13133 (health check).
+**Install and run.** I installed Docker Desktop (WSL 2 backend) and ran the official core image `otel/opentelemetry-collector:0.164.0` from Docker Hub. It already includes every component this pipeline needs: the `file` exporter, the `memory_limiter` and `resource` processors and the `health_check` extension (`otelcol components` lists them). Only Section 4 switches to the *contrib* image, for the `spanmetrics` connector and the Prometheus exporter. `task2/docker-compose.yml` mounts the config read-only, mounts `./output` for the exported file, and publishes 4317 (OTLP gRPC), 4318 (OTLP HTTP) and 13133 (health check).
 
 ```yaml
 # task2/otel-collector-config.yaml
@@ -251,4 +251,5 @@ The same ID opens the trace in Jaeger (Figures 8 and 15).
 4. **4xx is an error for the client but not for the server.** Following the semantic conventions, a 409 leaves the inventory SERVER span UNSET (the server worked correctly), while the frontend CLIENT span is ERROR (Figure 13). An "error rate" alert must therefore pick the span kind on purpose.
 5. **Percentiles need suitable buckets.** My first p95 query said about 220 ms for free users, but that value was interpolated inside the coarse 100–250 ms bucket. I switched the figure to the average (`sum/count`). In production the buckets should be chosen around the SLO threshold.
 6. **Test data has to be realistic.** The first load run exhausted the stock in a minute, so 145 of 404 requests were 409s. That would have hidden the normal path, so I raised the stock levels.
-7. **Batching needs a clean shutdown.** With `BatchSpanProcessor`, a short script that exits without `provider.shutdown()` loses its last spans. The SDK does not warn about it.
+7. **The core distribution is shrinking.** On start-up the core 0.164.0 Collector warns that the `resource` processor will be removed from the core image in v0.167.0, with the `transform` processor as the replacement. Pinning the image tag kept this lab working; an upgrade would need the config migrated first, so the warning belongs in the upgrade checklist.
+8. **Batching needs a clean shutdown.** With `BatchSpanProcessor`, a short script that exits without `provider.shutdown()` loses its last spans. The SDK does not warn about it.

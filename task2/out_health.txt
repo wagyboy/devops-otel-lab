@@ -1,0 +1,1 @@
+{"status":"Server available","upSince":"2026-11-03T03:43:37.7829299Z","uptime":"4.812950859s"}

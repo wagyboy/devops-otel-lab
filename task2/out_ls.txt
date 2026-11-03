@@ -1,0 +1,1 @@
+-rw-r--r-- 1 USER 197121 6807 Nov  3 11:43 telemetry.jsonl

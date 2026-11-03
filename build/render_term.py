@@ -49,6 +49,9 @@ send_email = send_email.split('"exception.stacktrace"')[0] + '"exception.stacktr
 checkout = next(s for s in full if '"name": "checkout"' in s)
 collector = read(T2 / "out_collector.log").splitlines()
 t409, t402 = read(O / "t409.txt"), read(O / "t402.txt")
+# `docker compose up` prints each progress line more than once; keep the first of each run
+up = read(T2 / "out_up.txt").splitlines()
+up_lines = "\n".join(l for i, l in enumerate(up) if i == 0 or l.strip() != up[i - 1].strip())
 errors_tail = "\n".join(read(O / "out_errors.txt").splitlines()[-6:])
 
 SCREENS = {
@@ -59,17 +62,16 @@ SCREENS = {
         ("python console_demo.py   # default ConsoleSpanExporter, 2 of 7 spans shown", send_email + "\n" + checkout.split('"resource"')[0] + "…\n}"),
     ],
     "T2-run.png": [
-        ("docker compose up -d", " Network task2_default Created\n Container otel-collector Creating\n Container otel-collector Created\n"
-         " Container otel-collector Starting\n Container otel-collector Started"),
+        ("docker compose up -d", up_lines),
         ("docker compose ps", read(T2 / "out_docker_ps.txt")),
-        ("curl -s localhost:13133", '{"status":"Server available","upSince":"2026-11-02T21:51:24.287160004Z","uptime":"5.713785258s"}'),
+        ("curl -s localhost:13133", read(T2 / "out_health.txt")),
         ("python send_telemetry.py", read(T2 / "out_send.txt")),
-        ("ls -l output/", "-rw-r--r-- 1 USER 197121 6807 Nov  3 05:51 telemetry.jsonl"),
+        ("ls -l output/", read(T2 / "out_ls.txt")),
     ],
     "T2-collector-debug.png": [
         ("docker logs otel-collector   # debug exporter, excerpt",
-         cut("\n".join(collector[10:12]) + "\n…\n" + "\n".join(collector[19:22]) + "\n…\n" + "\n".join(collector[91:104])
-             + "\n…\n" + "\n".join(collector[146:160]), 130)),
+         cut("\n".join(collector[12:14]) + "\n…\n" + "\n".join(collector[21:25]) + "\n…\n" + "\n".join(collector[93:106])
+             + "\n…\n" + "\n".join(collector[148:163]), 130)),
     ],
     "T2-file-export.png": [
         ("python -m json.tool output/telemetry.jsonl   # file exporter, one log record", file_export_excerpt()),

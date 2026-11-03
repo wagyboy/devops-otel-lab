@@ -5,7 +5,7 @@ Owner: 陳致安 (B11309058) · Course: DevOps
 | Folder | Level | What it shows |
 | --- | --- | --- |
 | `task1/` | A | OpenTelemetry SDK with `ConsoleSpanExporter`: a 7-span trace with nesting, attributes, events and an error |
-| `task2/` | E | Dockerized Collector (`otel/opentelemetry-collector-contrib:0.164.0`): OTLP on 4317 → memory_limiter, resource, batch → console + local file, for traces and logs |
+| `task2/` | E | Dockerized Collector (core image `otel/opentelemetry-collector:0.164.0`): OTLP on 4317 → memory_limiter, resource, batch → console + local file, for traces and logs |
 | `o-level/` | O | Two Flask services with context propagation and baggage; a Collector with three pipelines + spanmetrics connector → Jaeger, Prometheus, log file; log ↔ trace correlation |
 | `screenshots/` | | Every figure used in the report |
 | `build/` | | Report source (`report.md`) and the scripts that build the PDF and capture screenshots |
