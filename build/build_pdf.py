@@ -1,4 +1,4 @@
-"""Build the A9 report PDF: report.md -> report.html -> PDF via headless Edge."""
+"""Build the A8 report PDF: report.md -> report.html -> PDF via headless Edge."""
 import html
 import pathlib
 import re
@@ -10,7 +10,7 @@ import markdown
 HERE = pathlib.Path(__file__).resolve().parent
 SRC = HERE / "report.md"
 OUT_HTML = HERE / "report.html"
-OUT_PDF = HERE.parent / "A9_陳致安_Opentelemetry.pdf"
+OUT_PDF = HERE.parent / "A8_陳致安_Opentelemetry.pdf"
 EDGE = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
 
 CSS = """
@@ -76,7 +76,7 @@ def main() -> int:
 
     OUT_HTML.write_text(
         '<!doctype html><html lang="en"><head><meta charset="utf-8">'
-        f"<title>A9 OpenTelemetry Report</title><style>{CSS}</style></head><body>{body}</body></html>",
+        f"<title>A8 OpenTelemetry Report</title><style>{CSS}</style></head><body>{body}</body></html>",
         encoding="utf-8",
     )
     print(f"HTML written with {n['fig']} figures")

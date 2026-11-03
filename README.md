@@ -1,4 +1,4 @@
-# DevOps A9: Observability with OpenTelemetry
+# DevOps A8: Observability with OpenTelemetry
 
 Owner: 陳致安 (B11309058) · Course: DevOps
 

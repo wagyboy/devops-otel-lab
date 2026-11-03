@@ -1,4 +1,4 @@
-# Assignment 9: Observability with OpenTelemetry
+# Assignment 8: Observability with OpenTelemetry
 
 **Name:** 陳致安 · **Student ID:** B11309058 · **Course:** DevOps · **Date:** November 3, 2026
 **Code:** <https://github.com/wagyboy/devops-otel-lab>
@@ -70,7 +70,7 @@ Swapping the `ConsoleSpanExporter` for an `OTLPSpanExporter` (Task 2) changes th
 
 ## 3. Task 2 (E): Dockerized OpenTelemetry Collector over OTLP
 
-**Install and run.** I installed Docker Desktop (WSL 2 backend) and ran the official image `otel/opentelemetry-collector-contrib:0.164.0` from Docker Hub. I chose the *contrib* distribution because the `file` exporter is not included in the core image. `task2/docker-compose.yml` mounts the config read-only, mounts `./output` for the exported file, and publishes 4317 (OTLP gRPC), 4318 (OTLP HTTP) and 13133 (health check).
+**Install and run.** I installed Docker Desktop (WSL 2 backend) and ran the official image `otel/opentelemetry-collector-contrib:0.164.0` from Docker Hub. The core image already includes the `file` exporter; I used the *contrib* distribution so that one image covers every component in this report, including the `spanmetrics` connector and Prometheus exporter in Section 4. `task2/docker-compose.yml` mounts the config read-only, mounts `./output` for the exported file, and publishes 4317 (OTLP gRPC), 4318 (OTLP HTTP) and 13133 (health check).
 
 ```yaml
 # task2/otel-collector-config.yaml
